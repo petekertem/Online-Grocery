@@ -1,5 +1,5 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <div>asd</div>;
+  return <div>Anasayfa</div>;
 }
