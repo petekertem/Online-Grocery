@@ -11,7 +11,7 @@ export const useCategoriesStore = create<CategoryState>((set)=>({
     categories:[],
     fetchCategories:async()=>{
         try {
-            const response = await axios.get("http://localhost:1337/api/categories?sort[0]=name:asc&populate=*")
+            const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_API_URL}/categories?sort[0]=name:asc&populate=*`)
             set({categories: response.data.data.map((category:any)=>category.attributes)})
         } catch (error) {
             console.log("Error: ", error)

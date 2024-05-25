@@ -3,3 +3,8 @@ export type Category = {
     name: string;
     color: string;
 }
+
+export type Slider = {
+    id: number;
+    url: string;
+}
