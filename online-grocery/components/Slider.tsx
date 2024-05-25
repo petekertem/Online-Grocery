@@ -3,10 +3,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Slider } from "@/types";
+import type { Slider } from "@/types";
 import Image from "next/image";
 
 interface SliderProps {

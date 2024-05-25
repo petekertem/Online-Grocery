@@ -1,13 +1,12 @@
-import { getSlider } from "@/actions/getSliders";
+import { getSlider } from "@/actions/getSlider";
 import Slider from "@/components/Slider";
-import Image from "next/image";
 
 export default async function Home() {
-  const SliderList = await getSlider();
+  const sliderList = await getSlider();
   return (
     <div>
       Anasayfa
-      <Slider sliderList={SliderList} />
+      <Slider sliderList={sliderList} />
     </div>
   );
 }
