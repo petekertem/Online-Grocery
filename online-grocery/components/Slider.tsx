@@ -19,10 +19,10 @@ const Slider = ({ sliderList }: SliderProps) => {
           <CarouselItem key={index}>
             <Image
               width={1000}
-              height={400}
+              height={100}
               alt="slider"
               unoptimized={true}
-              className="w-full object-cover rounded-xl"
+              className="w-full h-[200px] md:h-[400px] object-cover rounded-xl"
               src={
                 process.env.NEXT_PUBLIC_BACKEND_BASE_URL +
                 slider?.attributes?.url?.data?.attributes?.url
